@@ -17,7 +17,7 @@ export const layoutRoutes = [
         exact:true,
         meta:{
             requireAuth:false,
-            flag:true
+            flag:true,
         }
     },
     {
@@ -29,7 +29,8 @@ export const layoutRoutes = [
         exact:true,
         meta:{
             requireAuth:false,
-            flag:true
+            flag:true,
+            headTop:true
         }
     },
     {
@@ -41,7 +42,8 @@ export const layoutRoutes = [
         exact:true,
         meta:{
             requireAuth:true,
-            flag:true
+            flag:true,
+            headTop:false
         }
     },
     {
@@ -53,7 +55,8 @@ export const layoutRoutes = [
         exact:true,
         meta:{
             requireAuth:true,
-            flag:true
+            flag:true,
+            headTop:false,
         }
     },
     

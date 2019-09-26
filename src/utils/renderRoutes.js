@@ -42,7 +42,7 @@ export default (routes)=>{
                 (props)=>{
                     if(!route.meta.requireAuth || sessionStorage.getItem("token") || route.path==="/login" ||route.path==="/register"){
                         return <Layout {...route}>
-                        <route.component {...props}/>
+                        <route.component {...props} name={route.name} meta={route.meta}/>
                         </Layout>
                     }else{
                         return <Redirect to={{pathname:"/login",state:{form:route.path}}}/>
