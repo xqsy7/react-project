@@ -1,3 +1,4 @@
+
 import {fetch as fetchPro} from "whatwg-fetch";
 import qs from "qs";
 
@@ -15,7 +16,8 @@ const get = (url,data)=>{
         headers:{
             "conent-type":"application/json"
         }
-    }).then(res=>res.json());
+    }).then(res => res.json());
+    
 
     return result;
 }

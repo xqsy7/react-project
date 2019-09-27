@@ -30,12 +30,17 @@ const ShoppingCar = Loadable({
     loader:()=>import("./shoppingCar"),
     loading:Loading
 })
+const Search=Loadable({
 
+    loader: () => import("./search"),
+    loading:Loading
+})
 export {
     ShoppingCar,
     Classification,
     Register,
     Login,
     Mine,
-    Home
+    Home,
+    Search
 }
